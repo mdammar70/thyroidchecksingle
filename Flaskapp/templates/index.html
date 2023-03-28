@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+            margin-bottom: 20px;
+        }
+        .A{
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+    </style>
+<body background="https://github.com/bharathksg/public_web_ml/blob/main/thyroid.jpg?raw=true" >
+    <center>
+    <h1> THYROID TEST AT TOUR HOME</h1><br>
+    <div class="A">
+        <form method="POST", action="{{url_for('home')}}">
+        <b> TSH VALUE : </br><input type="text", name='a' size="40"> </br>
+        <b> TT4 value: </br><input type="text", name='b', size="40"> </br>
+        <b> T4U value: </br><input type="text", name='c', size="40"> </br>
+        <b> FTI value: : </br><input type="text", name='d' size="40"> </br>
+        </div>
+        <input type="submit" , value='predict!' ></br>
+        </form>
+    </center>
+    <center>
+    <h3 >
+        {{predict}}
+    </h3>
+    </center>
+        
+</body>
+</html>
