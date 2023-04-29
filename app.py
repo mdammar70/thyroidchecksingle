@@ -15,7 +15,7 @@ def thyroid_prediction(input_data):
       return 'Positive! You need to Consult a doctor'
 def main():
     # giving a title
-    st.title('Thyroid Prediction Web App')
+    st.title('Thyroid Test At Your Home ')
 
     TSH = st.text_input('TSH VALUE : Thyroid-Stimulating Hormone')
     TT4 = st.text_input('TT4 VALUE : Total thyroxine')
