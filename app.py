@@ -10,9 +10,9 @@ def thyroid_prediction(input_data):
     prediction = loaded_model.predict(input_data_reshaped)
     print(prediction)
     if (prediction[0] == 0):
-        return 'You are free from thyroid disease'
+        return 'Negative, You are free from thyroid disease'
     else:
-      return 'you have thyroid disease'
+      return 'Positive! You need to Consult a doctor'
 def main():
     # giving a title
     st.title('Thyroid Prediction Web App')
